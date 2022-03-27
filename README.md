@@ -41,7 +41,7 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-I had a tons of issues finishing this app, with dependencies, libraries and random things that occur, strangely this made me love even more mobile development 😅.
+I had tons of issues finishing this app, with dependencies, libraries and random things that occurred, strangely this made me love even more mobile development 😅.
 
 ## Open-source libraries used
 
