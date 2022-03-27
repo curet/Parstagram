@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
             if (photoFile != null){
                 submitPost(description, user, photoFile!!)
             }else{
+                Log.e(TAG, "Error while submitting picture")
+                Toast.makeText(this, "Error while submitting picture", Toast.LENGTH_SHORT).show()
                 // TODO: Print error log message
                 // TODO: Show a toast to user to let them know to take a picture
             }
