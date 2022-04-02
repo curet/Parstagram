@@ -20,6 +20,7 @@ class ProfileFragment: FeedFragment() {
                     // Something wrong
                     Log.e(TAG, "Error fetching posts")
                 }else{
+                    adapter.clear() // cleat out current fetched posts
                     if (posts != null){
                         for (post in posts){
                             Log.i(TAG, "Post: " + post.getDescription() + " , username: "
@@ -28,6 +29,7 @@ class ProfileFragment: FeedFragment() {
 
                         allPosts.addAll(posts)
                         adapter.notifyDataSetChanged()
+                        swipeContainer.setRefreshing(false)  // signal refresh has finished
                     }
                 }
             }
