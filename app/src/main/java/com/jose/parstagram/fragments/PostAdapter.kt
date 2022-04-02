@@ -40,6 +40,18 @@ class PostAdapter(val context: Context, val posts: ArrayList<Post>)
         notifyDataSetChanged()
     }
 
+    fun addNumberOfPost(postList: List<Post>, numberOfPost: Int){
+        var endOfIterator = numberOfPost - 1
+        if (postList.size < 20){
+            endOfIterator = postList.size - 1
+        }
+
+        for (i in 0..endOfIterator) {
+            posts.add(postList[i])
+        }
+        notifyDataSetChanged()
+    }
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val tvUsername: TextView
         val ivImage: ImageView
