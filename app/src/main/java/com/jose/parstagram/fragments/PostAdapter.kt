@@ -35,6 +35,11 @@ class PostAdapter(val context: Context, val posts: ArrayList<Post>)
     }
 
 
+    fun addAll(postList: List<Post>) {
+        posts.addAll(postList)
+        notifyDataSetChanged()
+    }
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val tvUsername: TextView
         val ivImage: ImageView
