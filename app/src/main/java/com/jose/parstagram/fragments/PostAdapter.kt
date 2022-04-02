@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import com.jose.parstagram.Post
 import com.jose.parstagram.R
 
-class PostAdapter(val context: Context, val posts: List<Post>)
+class PostAdapter(val context: Context, val posts: ArrayList<Post>)
     : RecyclerView.Adapter<PostAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostAdapter.ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_post, parent, false)
@@ -27,6 +27,13 @@ class PostAdapter(val context: Context, val posts: List<Post>)
     override fun getItemCount(): Int {
         return posts.size
     }
+
+    // Clean all elements of the recycler
+    fun clear() {
+        posts.clear()
+        notifyDataSetChanged()
+    }
+
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val tvUsername: TextView
