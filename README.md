@@ -50,6 +50,10 @@ Here's a walkthrough of implemented user stories:
 
 <img src="https://user-images.githubusercontent.com/45988719/161352903-f05de6ed-57ca-411f-8561-8fb467fc1282.gif" width=250><br>
 
+### Fetch 20 Posts
+
+<img src="https://user-images.githubusercontent.com/45988719/161463414-8f08defc-acce-4264-9538-887873603d4a.gif" width=250><br>
+
 ## Notes
 
 This was a nice project to implement. I plan on continue with the optional features but wanted to make sure to at least submit the required ones first.
